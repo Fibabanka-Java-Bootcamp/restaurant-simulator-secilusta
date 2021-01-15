@@ -3,6 +3,11 @@ package org.kodluyoruz;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Restaurant r = new Restaurant();
+        try {
+            r.runSimulation();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
